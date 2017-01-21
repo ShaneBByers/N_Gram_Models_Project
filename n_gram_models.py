@@ -1,4 +1,8 @@
+import string
+import random
+
 def tokenize(text):
+
     str = text.strip()
     curr = str.split()
     punc_array = []
@@ -23,10 +27,11 @@ def tokenize(text):
                     break
 
     return curr
-
     pass
 
+
 def ngrams(n, tokens):
+
     return_list = []
 
     tokens_copy = []
@@ -48,9 +53,8 @@ def ngrams(n, tokens):
         return_list.append((context,token))
 
     return return_list
-
-
     pass
+
 
 class NgramModel(object):
 
@@ -141,10 +145,11 @@ class NgramModel(object):
         sep = " "
 
         return sep.join(tokens)
-
         pass
 
+
 def create_ngram_model(n, path):
+
     in_file = open(path)
 
     lines = in_file.readlines()
