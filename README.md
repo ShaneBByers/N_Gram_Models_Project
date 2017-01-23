@@ -5,20 +5,17 @@ CMPSC 442 (Artificial Intelligence Course) Project 5: Write a program that can c
 10/13/2016
 
 TO RUN: 
-> python -i n_gram_models.py
 
-> Create an n-gram model
-
->> model_variable = create_ngram_model(n,path_to_text_document) - Where n is the size of the context used for each randomly generated word sequence.
-
->> model_variable.random_text(length) - Where length is the number of words that are to be randomly generated.
+    python -i n_gram_models.py
+    Create an n-gram model
+        model_variable = create_ngram_model(n,path_to_text_document) - Where n is the size of the context used for each randomly generated word sequence.
+        model_variable.random_text(length) - Where length is the number of words that are to be randomly generated.
 
 EXAMPLE:
-> python -i n_gram_models.py
 
-> m = create_ngram_model(3,"frankenstein.txt")
-
-> m.random_text(15)
+    python -i n_gram_models.py
+    m = create_ngram_model(3,"frankenstein.txt")
+    m.random_text(15)
 
 This program uses a Markov Chain method to create ngram models that can allow the user to randomly generate strings of words of differing contextual understandings from a source text document.
 
